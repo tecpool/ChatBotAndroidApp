@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="2dp"
+    android:id="@+id/ll_main"
+    android:gravity="left"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="9"
+        android:gravity="left"
+        android:id="@+id/ll_sub"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="36dp"
+
+            android:layout_margin="4dp"
+            android:id="@+id/bot_icon"
+            android:layout_height="36dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/who"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/wait"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/wait"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:text=""
+        android:id="@+id/msg"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+

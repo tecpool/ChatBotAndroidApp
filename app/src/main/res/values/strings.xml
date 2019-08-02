@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChatBot</string>
+    <string name="url">http://chatbot.tecpool.in/botservice.asmx</string>
+    <string name="title_activity_chat_bot">ChatBotActivity</string>
+
+
+</resources>

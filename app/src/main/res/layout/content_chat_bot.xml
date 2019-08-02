@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_chat_bot"
+    android:layout_width="match_parent"
+    android:background="#fefefe"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.tecpool.chatbot.ChatBotActivity"
+    tools:showIn="@layout/activity_chat_bot">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:id="@+id/rl_typebox"
+        android:visibility="gone"
+        android:layout_height="50dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_edittext"
+            android:id="@+id/et_reply"
+            android:hint="Enter Your Message"
+            android:paddingRight="40dp"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_width="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ic_send"
+            android:id="@+id/btn_reply"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        android:id="@+id/rl_end"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="End Chat"
+            android:id="@+id/btn_end"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
